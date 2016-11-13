@@ -7,55 +7,69 @@
   </head>
   <body>
     <div class="container">
-    <header class="main-header">
-        <nav class="main-navigation">
-          <ul>
-            <li><a href="#">Информация</li>
-            <li><a href="#">Фото и видео</li>
-            <li><a href="#">Карта штата</li>
-            <li><a href="#">Гостиницы</li>
-          </ul>
-        </nav>
-        <a href="#"><img src="img/logo.svg"name="logo"></a>
-    </header>
+      <header class="main-header">
+          <nav class="main-navigation left">
+            <ul>
+              <li><a href="#">Информация</li>
+              <li><a href="#">Фото и видео</li>
+            </ul>
+          </nav>
+          <a href="#"><img src="img/logo.svg" width="138" height="70" name="logo"></a>
+          <nav class="main-navigation right">
+            <ul>
+              <li><a href="#">Карта штата</li>
+              <li><a href="#">Гостиницы</li>
+            </ul>
+          </nav>
+      </header>
     <main>
-      <section class="aside">
+      <section class="aside clearfix">
         <form action="" method="get">
+          <div class="column-right">
           <p>инфраструктура</p>
            <ul>
             <li><label>бассейн<input type="checkbox" name="pool" checked></label></li>
             <li><label>парковка<input type="checkbox" name="parking"></label></li>
             <li><label>wi-fi<input type="checkbox" name="wi-fi"></label></li>
            </ul>
+         </div>
+         <div class="column-center">
           <p>тип жилья</p>
            <ul>
             <li><label>гостиница<input type="checkbox" name="hotel" checked></label></li>
             <li><label>мотель<input type="checkbox" name="motel" checked></label></li>
             <li><label>апартаменты<input type="checkbox" name="apart" checked></label></li>
            </ul>
+         </div>
+         <div class="column-left">
           <p>стоимость в сутки (p.):</p>
           <input type="text" name="min" value="от 0">
           <input type="text" name="max" value="до 3000">
           <button class="btn" type="submit">показать</button>
+        </div>
         </form>
       </section>
-      <section class="searching results">
+      <section class="searching-results">
+        <div class="sotting clearfix">
         <div class="search">
             <h1>найдено:3</h1>
+        </div>
           <ul class="breadcrumbs">
             <p>сортировка</p>
             <li><a href="#">по цене<a></li>
             <li><a href="#">по типу<a></li>
             <li><a href="#">по рейтингу<a></li>
           </ul>
+          <div class="sort">
           <form type="" name="">
             <img src="#" width="" height="">
             <img src="#" width="" height="">
           </form>
         </div>
-        <div class="hotel">
-          <img class="photo" src="img/hotel.jpg" width="" height="" alt="hotel photo">
-          <div class="hotel name">
+      </div>
+        <div class="hotel clearfix">
+          <img class="picture" src="img/hotel.jpg" width="135" height="90" alt="hotel photo">
+          <div class="hotel-name">
            <h2>amara resort & spa</h2>
            <div class="more">
             <span>гостиница</span>
@@ -67,13 +81,13 @@
            </div>
          </div>
          <div class="rating">
-           <img class="star" src="img/star-4.svg" width="" height="">
+           <img class="star" src="img/star-4.svg" width="89" height="17">
            <span>рейтинг 8,5</span>
          </div>
         </div>
-        <div class="hotel">
-          <img class="photo" src="img/motel.jpg" width="" height="" alt="hotel photo">
-          <div class="hotel name">
+        <div class="hotel clearfix">
+          <img class="picture" src="img/motel.jpg" width="135" height="90" alt="hotel photo">
+          <div class="hotel-name">
            <h2>desert quail inn</h2>
            <div class="more">
             <span>мотель</span>
@@ -85,13 +99,13 @@
            </div>
          </div>
          <div class="rating">
-           <img class="star" src="img/two stars.svg" width="" height="">
+           <img class="star" src="img/two stars.svg" width="42" height="17">
            <span>рейтинг 8,9</span>
          </div>
         </div>
-        <div class="hotel">
-          <img class="photo" src="img/apart.jpg" width="" height="" alt="hotel photo">
-          <div class="hotel name">
+        <div class="hotel clearfix">
+          <img class="picture" src="img/apart.jpg" width="135" height="90" alt="hotel photo">
+          <div class="hotel-name">
            <h2>villas at poco diablo</h2>
            <div class="more">
             <span>апартаменты</span>
@@ -103,25 +117,25 @@
            </div>
          </div>
          <div class="rating">
-           <img class="star" src="img/star_3.svg" width="" height="">
+           <img class="star" src="img/star_3.svg" width="65" height="17">
            <span>рейтинг 9,2</span>
          </div>
         </div>
       </section>
     </main>
      <footer>
-      <div class="container">
+      <div class="footer clearfix">
         <section class="vizitsedona">
           <a href="#">#VISITSEDONA</a>
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-twitter" href="#"><img src="img/twitter.svg" width="17px" height="14px" alt="twitter"></a>
-          <a class="social-btn social-btn-fb" href="#"><img src="img/facebook.svg" width="8px" height="17px" alt="facebook"></a>
-          <a class="social-btn social-btn-y-tube" href="#"><img src="img/Youtube.svg" width="20px" height="14px" alt="youtube"></a>
+          <a class="social-btn social-btn-twitter" href="#"><img src="img/twitter.svg" width="17" height="14" alt="twitter"></a>
+          <a class="social-btn social-btn-fb" href="#"><img src="img/facebook.svg" width="8" height="17" alt="facebook"></a>
+          <a class="social-btn social-btn-y-tube" href="#"><img src="img/Youtube.svg" width="20" height="14" alt="youtube"></a>
         </section>
         <section class="footer-copiright">
           <p>WEBSITE BY<p>
-            <a class="btn" href="#"><img src="img/logo_html.svg" width="113px" height="39px" alt="Логотип академии"></a>
+            <a class="btn" href="#"><img src="img/logo_html.svg" width="113" height="39" alt="Логотип академии"></a>
         </section>
       </div>
     </footer>
