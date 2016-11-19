@@ -19,6 +19,10 @@ h1{
   color: #000000;
   font-weight: bold;
   font-family: "PTSans";
+  margin-top:0;
+}
+h2{
+  margin-top: 0;
 }
 .container{
   width:768px;
@@ -29,6 +33,7 @@ h1{
   margin:0 45px;
   color:#000000;
   background-color:#ffffff;
+  position: relative;
 }
 .main-navigation ul{
   margin: 0;
@@ -66,13 +71,31 @@ h1{
 .logo{
   position: absolute;
   top:0px;
-  left: 439px;
+  left: 270px;
 }
 .sedona{
   width:768px;
-  height:725px;
-  background-color:#e1eef7;
-  background-image: url("img/background.img") center no-repeat;
+  background-color:pink;
+  background-image: url("../img/background.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.welcome{
+  width: 458px;
+  padding-top: 76px;
+  padding-left: 156px;
+  padding-bottom: 78px;
+}
+.decoration{
+  width: 768px;
+  background-image: url("../img/white.png");
+  background-position:0px 476px;
+  background-repeat: no-repeat;
+}
+.description{
+  background-color: pink;
+  width: 196px;
 }
 .blue{
   width:256px;
@@ -80,7 +103,20 @@ h1{
   background-color: #81b3d2;
   float:left;
 }
-.second{
+.town{
+  float:right;
+  width:512px;
+  height: 256px;
+}
+.nature{
+  float: left;
+  width: 512px;
+  height: 256px;
+}
+.blue-second{
+  width:256px;
+  height:256px;
+  background-color: #81b3d2;
   float:right;
 }
 .white{
