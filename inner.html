@@ -12,7 +12,7 @@
       <header class="main-header">
           <nav class="main-navigation clearfix">
             <ul>
-              <li class="nav-left"><a href="#">Информация</li>
+              <li class="active nav-left"><a>Информация</li>
               <li class="nav-left"><a href="#">Фото и видео</li>
               <li class="nav-right"><a href="#">Карта штата</li>
               <li class="nav-right"><a href="#">Гостиницы</li>
@@ -23,58 +23,61 @@
     <main>
       <section class="aside clearfix">
         <form action="" method="get">
-          <div class="column-right">
+          <div class="column column-left">
           <p>инфраструктура</p>
-           <ul>
-            <li><label>бассейн<input type="checkbox" name="pool" checked></label></li>
-            <li><label>парковка<input type="checkbox" name="parking"></label></li>
-            <li><label>wi-fi<input type="checkbox" name="wi-fi"></label></li>
+           <ul class="free">
+            <li><label class="choose-checkbox"><input type="checkbox" name="pool" checked><span class="checkbox-indicator"></span>бассейн</label></li>
+            <li><label class="choose-checkbox"><input type="checkbox" name="parking"><span class="checkbox-indicator"></span>парковка</label></li>
+            <li><label class="choose-checkbox"><input type="checkbox" name="wi-fi"><span class="checkbox-indicator"></span>wi-fi</label></li>
            </ul>
          </div>
-         <div class="column-center">
+         <div class="column column-center">
           <p>тип жилья</p>
-           <ul>
-            <li><label>гостиница<input type="checkbox" name="hotel" checked></label></li>
-            <li><label>мотель<input type="checkbox" name="motel" checked></label></li>
-            <li><label>апартаменты<input type="checkbox" name="apart" checked></label></li>
+           <ul class="free">
+            <li><label class="choose-checkbox"><input type="checkbox" name="hotel" checked><span class="checkbox-indicator"></span>гостиница</label></li>
+            <li><label class="choose-checkbox"><input type="checkbox" name="motel" checked><span class="checkbox-indicator"></span>мотель</label></li>
+            <li><label class="choose-checkbox"><input type="checkbox" name="apart" checked><span class="checkbox-indicator"></span>апартаменты</label></li>
            </ul>
          </div>
-         <div class="column-left">
-          <p>стоимость в сутки (p.):</p>
-          <input type="text" name="min" value="от 0">
-          <input type="text" name="max" value="до 3000">
-          <button class="btn" type="submit">показать</button>
-        </div>
-        </form>
-      </section>
-        <section class="sorting clearfix">
-         <div class="search">
-            <h1>найдено:3</h1>
-         </div>
-           <ul class="breadcrumbs">
-             <p class="out">сортировка</p>
-             <li><a href="#">по цене<a></li>
-             <li><a href="#">по типу<a></li>
-             <li><a href="#">по рейтингу<a></li>
-           </ul>
-          <div class="sort">
-          <form type="" name="">
-            <img src="#" width="" height="">
-            <img src="#" width="" height="">
-          </form>
+         <div class="filter-range">
+          <div class="filter-range-title">стоимость в сутки (р.):</div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
           </div>
+          <div class="range-controls">
+            <div class="scale">
+             <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
+         </div>
+      </section>
+        <section class="sorting">
+           <ul class="breadcrumbs">
+             <li><h1>найдено:3</h1></li>
+             <li><p>сортировка:</p></li>
+             <li class="active"><a>по цене</a></li>
+             <li><a href="#">по типу</a></li>
+             <li><a href="#">по рейтингу</a></li>
+             <li><button class="sprite btn btn-up" type="button"></btn></li>
+             <li class="active"><button class="sprite btn btn-down" type="button"></btn></div></li>
+           </ul>
        </section>
+       <section class="container">
         <div class="hotel clearfix">
           <img class="picture" src="img/hotel.jpg" width="135" height="90" alt="hotel photo">
           <div class="hotel-name">
            <h2>amara resort & spa</h2>
            <div class="more">
             <p>гостиница</p>
-            <a class="btn" name="more" href="#">Подробнее</a>
+            <a class="btn btn-more" href="#">Подробнее</a>
            </div>
            <div class="price">
             <p>от 3500 р.</p>
-            <a class="btn" name="reserv" href="#">Забронировать</a>
+            <a class="btn btn-reserv" href="#">Забронировать</a>
            </div>
          </div>
          <div class="rating">
@@ -88,11 +91,11 @@
            <h2>desert quail inn</h2>
            <div class="more">
             <p>мотель</p>
-            <a class="btn" name="more" href="#">Подробнее</a>
+            <a class="btn btn-more" href="#">Подробнее</a>
            </div>
            <div class="price">
             <p>от 2000 р.</p>
-            <a class="btn" name="reserv" href="#">Забронировать</a>
+            <a class="btn btn-reserv" href="#">Забронировать</a>
            </div>
          </div>
          <div class="rating">
@@ -106,11 +109,11 @@
            <h2>villas at poco diablo</h2>
            <div class="more">
             <p>апартаменты</p>
-            <a class="btn" name="more" href="#">Подробнее</a>
+            <a class="btn btn-more" href="#">Подробнее</a>
            </div>
            <div class="price">
             <p>от 4000 р.</p>
-            <a class="btn" name="reserv" href="#">Забронировать</a>
+            <a class="btn btn-reserv" href="#">Забронировать</a>
            </div>
          </div>
          <div class="rating">
@@ -118,8 +121,10 @@
            <p>рейтинг 9,2</p>
          </div>
         </div>
+      </section>
     </main>
     <footer>
+      <section class="container">
       <div class="footer clearfix">
         <section class="vizitsedona">
           <a href="#"><h2>#VISITSEDONA</h2></a>
@@ -134,6 +139,7 @@
             <a class="sprite logo-html" href="#"></a>
         </section>
       </div>
+    </section>
     </footer>
   </div>
   </body>
