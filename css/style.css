@@ -266,7 +266,7 @@ h2{
 .interest{
   width: 768px;
   height: 203px;
-  background-color: #ffffff;
+  background-color: pink;
   padding-top: 55px;
   text-align: center;
 }
@@ -275,18 +275,79 @@ h2{
 }
 .interest p{
   line-height: 24px;
-  margin-bottom: 23px;
+  margin-bottom: 53px;
 }
-.interest h2{
+.order{
+  position: relative;
+}
+.order button{
   display: block;
   width: 568px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
   height: 56px;
   line-height: 26px;
   color: #ffffff;
   background-color: #766357;
   text-align: center;
-  padding-top: 30px;
   margin-left: 100px;
+}
+.order h2{
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.modal-content{
+  position: absolute;
+  top: 56px;
+  right: 100px;
+  width: 568px;
+  height: 395px;
+  background-color: #ffffff;
+}
+.order-form label{
+  display: block;
+  margin-bottom: 30px;
+  background-color: pink;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.order-form label:first-child{
+  display: block;
+  margin-top: 55px;
+}
+.order-form input[type="data"],
+.order-form input[type="text"]{
+  height: 38px;
+  margin-left: 18px;
+  padding-left: 12px;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  background-image: url("../img/calendar.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  border: none;
+}
+.order-form input[type="data"]{
+  width: 335px;
+}
+.order-form input[type="text"]{
+  width: 36px;
+}
+label .men{
+  display: inline;
 }
 .map{
   width: 768px;
@@ -295,12 +356,6 @@ h2{
   background-image: url("../img/map.jpg");
   background-position: top;
   background-repeat: no-repeat;
-}
-.order{
-  width: 568px;
-  height: 395px;
-  background-color: #ffffff;
-  margin-left:100px;
 }
 .footer{
   width:708px;

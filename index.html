@@ -98,18 +98,20 @@
         <h1>ЗАИНТЕРЕСОВАЛИСЬ?</h1>
         <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>
         И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-        <h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+        <div class="order">
+          <button><h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2></button>
+          <div class="modal-content">
+            <form class="order-form" action="#" mehtod="post">
+              <label>ДАТА ЗАЕЗДА:<input type="data" name="calendar" value="24 апреля 2016 года"></label>
+              <label>ДАТА ВЫЕЗДА:<input type="data" name="calendar" value="4 июля 2016 года"></label>
+              <label class="men">ВЗРОСЛЫЕ<input type="text" name="numeral" value="2"></label>
+              <label class="men">ДЕТИ<input type="text" name="numeral" value="0"></label>
+              <input type="submit" value="НАЙТИ">
+            </form>
+          </div>
+        </div>
       </div>
       <div class="map">
-        <div class="order">
-         <form action="#" mehtod="post">
-          <label>ДАТА ЗАЕЗДА<input type="data" name="calendar" value="24 апреля 2016 года"></label><br>
-          <label>ДАТА ВЫЕЗДА<input type="data" name="calendar" value="4 июля 2016 года"></label><br>
-          <label>ВЗРОСЛЫЕ<input type="text" name="numeral"></label>
-          <label>ДЕТИ<input type="text" name="numeral"></label>
-          <input type="submit" value="НАЙТИ">
-        </form>
-       </div>
       </div>
   </main>
     <footer>
