@@ -14,8 +14,8 @@
               <ul>
                 <li class="nav-left"><a href="#">Информация</li>
                 <li class="nav-left"><a href="#">Фото и видео</li>
+                <li class="nav-right"><a href="inner.html">Гостиницы</li>
                 <li class="nav-right"><a href="#">Карта штата</li>
-                <li class="nav-right"><a href="#">Гостиницы</li>
               </ul>
             </nav>
             <a href="#"><img class="logo" src="img/logo.svg" width="138" height="70" name="logo"></a>
@@ -27,17 +27,17 @@
        </div>
      </div>
           <div class="description">
-            <h1>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
+            <h1>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,
             ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
             <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД-КАНЬОН!</p>
           </div>
         <article class="best">
           <section class="photo clearfix">
             <div class="blue">
-             <h2>НАСТОЯЩИЙ<br>ГОРОДОК</h2>
+             <h2>НАСТОЯЩИЙ ГОРОДОК</h2>
              <p>-№1-</p>
-             <p>СЕДОНА- НЕ АТТРАКЦИОН<br>ДЛЯ ТУРИСТОВ,
-             ТАМ ТЕЧЕТ<br>СВОЯ ЖИЗНЬ</p>
+             <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,
+             ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
             <div class="town"><img src="img/town.jpg" width="512" height="256" alt="photo town"></div>
           </section>
@@ -45,21 +45,21 @@
           <div class="white">
             <div class="home">
              <h2>ЖИЛЬЕ</h2>
-             <p>РЕКОМЕНДУЕМ ПОЖИТЬ<br>В НАСТОЯЩЕМ
-             МОТЕЛЕ,<br>КАК В КИНО</p>
+             <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ
+             МОТЕЛЕ, ВСЕ КАК В КИНО</p>
            </div>
           </div>
           <div class="white">
             <div class="eat">
              <h2>ЕДА</h2>
-             <p>ВСЕГДА ЗАКАЗЫВАЙТЕ<br>ФИРМЕННЫЙ БУРГЕР,<br>
+             <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,
              ВЫ НЕ РАЗОЧАРУЕТЕСЬ</p>
             </div>
           </div>
           <div class="white">
             <div class="suvenir">
-             <h2 class="suvenir">СУВЕНИРЫ</h2>
-             <p>НЕ ТОЛЬКО КИТАЙСКОГО,<br>НО И МЕСТНОГО<br>
+             <h2>СУВЕНИРЫ</h2>
+             <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО
              ПРОИЗВОДСТВА!</p>
             </div>
           </div>
@@ -67,29 +67,29 @@
         <section class="photo clearfix">
           <div class="nature"><img src="img/nature.jpg" width="512" height="256" alt="photo nature"></div>
           <div class="blue-second">
-            <h2>ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h2>
+            <h2>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
             <p>-№2-</p>
-            <p>ДА, ПО НЕМУ МОЖНО<br>ПРОЙТИ! ЕСЛИ КОНЕЧНО,<br>
+            <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО,
             ВЫ ОСМЕЛИТЕСЬ</p>
           </div>
         </section>
         <section class="advantage clearfix">
           <div class="grey">
-            <h2>НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h2>
+            <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
             <p>-№3-</p>
-            <p>ВСЕ ДОСТОПРИМЕЧА-<br>ТЕЛЬНОСТИ
-            НАХОДЯТСЯ<br> ОЧЕНЬ БЛИЗКО</p>
+            <p>ВСЕ ДОСТОПРИМЕЧА-ТЕЛЬНОСТИ
+            НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
           </div>
           <div class="grey">
-            <h2>КРАСИВАЯ<br>ДОРОГА</h2>
+            <h2>КРАСИВАЯ ДОРОГА</h2>
             <p>-№4-</p>
-            <p>ЕХАТЬ В СЕДОНУ ИЗ<br> ЛАС-ВЕГАСА СОВСЕМ<br>
+            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ
             НЕ СКУЧНО!</p>
           </div>
           <div class="grey">
             <h2>МАЛО<br>ТУРИСТОВ</h2>
             <p>-№5-</p>
-            <p>БОЛЬШИНСТВО ЕДЕТ В<br>ГРАНД-КАНЬОН И<br>
+            <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД-КАНЬОН И
             ТОЛПИТСЯ ТАМ</p>
           </div>
         </section>
@@ -102,11 +102,29 @@
           <button><h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2></button>
           <div class="modal-content">
             <form class="order-form" action="#" mehtod="post">
-              <label>ДАТА ЗАЕЗДА:<input type="data" name="calendar" value="24 апреля 2016 года"></label>
-              <label>ДАТА ВЫЕЗДА:<input type="data" name="calendar" value="4 июля 2016 года"></label>
-              <label class="men">ВЗРОСЛЫЕ<input type="text" name="numeral" value="2"></label>
-              <label class="men">ДЕТИ<input type="text" name="numeral" value="0"></label>
-              <input type="submit" value="НАЙТИ">
+              <table>
+                <tr>
+                  <td><label for="in-field">ДАТА ЗАЕЗДА</label></td>
+                  <td class="with" colspan="7"><input type="data" id="in-field" name="calendar" value="24 апреля 2016 года"></td>
+                </tr>
+                <tr>
+                  <td><label for="from-field">ДАТА ВЫЕЗДА</label></td>
+                  <td class="with" colspan="7"><input type="data" id="from-field" name="calendar" value="4 июля 2016 года"></td>
+                </tr>
+                <tr>
+                  <td><label for="men-field">ВЗРОСЛЫЕ</label></td>
+                  <td class="with"><button class="btn-minus"></td>
+                  <td class="with"><input type="text" id="men-field" name="numeral" value="2"></td>
+                  <td class="with"><button class="btn-plus"></td>
+                  <td class="without"><label for="child-field">ДЕТИ</label></td>
+                  <td class="with"><button class="btn-minus"></td>
+                  <td class="with"><input type="text" id="child-field" name="numeral" value="0"></td>
+                  <td class="with"><button class="btn-plus"></td>
+                </tr>
+                <tr>
+                  <td colspan="8"><input type="submit" value="НАЙТИ"></td>
+                </tr>
+              </table>
             </form>
           </div>
         </div>
